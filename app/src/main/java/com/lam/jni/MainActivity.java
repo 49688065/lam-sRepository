@@ -2,8 +2,8 @@ package com.lam.jni;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void click(View view) {
         String string = mJni.getString();
-        Toast.makeText(MainActivity.this, string, Toast.LENGTH_SHORT).show();
+        Log.i("tag", "develop");
     }
 }
